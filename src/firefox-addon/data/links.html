@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+  <head>
+    <meta content="charset=UTF-8"/>
+    <style type="text/css">
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      body {
+        padding: 8px;
+        line-height: 1.1em;
+        font-size: 1em;
+        background-color: #fff;
+      }
+
+      section h1 {
+        /* List Header */
+        font-size: 1em;
+        display: none;
+      }
+
+      section li {
+        display: list-item;
+        list-style: none;
+        padding: 8 8 4 8;
+        margin-top: 2px;
+        color: #003697;
+        cursor: pointer;
+        background-color: #ddeffe;
+      }
+
+      section li:hover {
+        background-color: #cde8ff;
+      }
+
+      section li:active {
+        background-color: #8cb7e2;
+      }
+
+      .icon {
+        width: 1.2em;
+        height: 1.2em;
+        vertical-align: middle;
+      }
+
+      .categoryicon {
+        width: 1.2em;
+        height: 1.2em;
+        vertical-align: middle;
+      }
+
+      .title {
+        vertical-align: middle;
+      }
+
+      .site {
+        vertical-align: middle;
+        color: #555;
+        font-weight: bold;
+        font-size: 0.6em;
+      }
+
+      button {
+        width: 100%;
+        border-top: 1px solid #ccc;
+        border-right: 1px solid #999;
+        border-bottom: 1px solid #999;
+        border-left: 1px solid #ccc;
+        padding: 5px 20px;
+        font-weight: bold;
+        cursor: pointer;
+        color: #666;
+        background-color: #f0f0f0;
+      }
+
+      button:hover {
+        background-color: #e0e0e0;
+      }
+
+      button:active {
+        background-color: #d0d0d0;
+      }
+
+      button img {
+        width: 1.2em;
+        height: 1.2em;
+        vertical-align: middle;
+        margin-top: -0.3em;
+        margin-right: 0.25em;
+      }
+    </style>
+  </head>
+
+  <body>
+    <section>
+      <h1>Tips</h1>
+      <ul data-bind="foreach: {data: tips, afterAdd: attachItemEvent}">
+        <li data-bind="attr: {href: url}">
+          <div>
+            <img class="icon" data-bind="attr: {src: icon, alt: site}"/>
+            <span class="title" data-bind="text: title">{{description}}</span>
+          </div>
+          <span class="site" data-bind="text: site">{{name}}</span>
+          <img style="float: right;" class="categoryicon" data-bind="attr: {src: category.icon, alt: category.name}"/>
+        </li>
+      </ul>
+    </section>
+    <menu style="margin-top: 1em;">
+      <li>
+        <p style="margin-bottom: 0.5em;" data-bind="text: lblEmpty, style:{display: tips().length > 0 ? 'none': 'block'}" >
+          {{このページにはまだ関連するページが登録されていません。}}
+        </p>
+        <button id="appendPage">
+          <img src="./resources/upload.png"><span data-bind="text: lblAppendPage">{{関連するページを追加する}}</span>
+        </button>
+      </li>
+    </menu>
+  </body>
+</html>

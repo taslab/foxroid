@@ -1,0 +1,222 @@
+{
+  "updated": "2006-11-12T21:25:30.000Z",
+  "version": 1,
+  "code": 200,
+  "entries": [
+    {
+      "name": "Tabs",
+      "url": "http://developer.android.com/design/building-blocks/tabs.html",
+      "icon": "http://developer.android.com/favicon.ico",
+      "category": 2,
+      "status": 1,
+      "links": [
+        {
+          "url": "http://buildingfirefoxos.com/building-blocks/tabs.html",
+          "icon": "https://mozorg.cdn.mozilla.net/media/img/favicon.ico",
+          "name": "Building Firefox OS",
+          "description": "Tabs",
+          "category": 1,
+          "status": 1
+        }, {
+          "url": "http://www.mozilla.org/en-US/styleguide/products/firefox-os/tab-bars/",
+          "icon": "https://developer.cdn.mozilla.net/media/redesign/img/favicon32.png",
+          "name": "Firefox OS Guidelines",
+          "description": "Firefox OS Tab Bar, Toolbar and Filters — Mozilla Style Guide — Mozilla",
+          "category": 1,
+          "status": 1
+        }, {
+          "url": "http://www.foxroid.jp/tips/tabs",
+          "icon": "https://tasdgbl.backlog.jp/proxy/http://www.foxroid.jp/img/favicon.ico",
+          "name": "Foxroid",
+          "description": "Tabs — Foxroid",
+          "category": 1,
+          "status": 1
+        }
+      ]
+    }, {
+      "name": "Building Firefox OS - tabs",
+      "url": "http://buildingfirefoxos.com/building-blocks/tabs.html",
+      "icon": "https://mozorg.cdn.mozilla.net/media/img/favicon.ico",
+      "category": 1,
+      "status": 1,
+      "links": [
+        {
+          "url": "http://developer.android.com/design/building-blocks/tabs.html",
+          "icon": "http://developer.android.com/favicon.ico",
+          "name": "Android Developers",
+          "description": "Tabs | Android Developers",
+          "category": 2,
+          "status": 1
+        }
+      ]
+    }, {
+      "name": "Lists",
+      "url": "http://developer.android.com/design/building-blocks/lists.html",
+      "icon": "http://developer.android.com/favicon.ico",
+      "category": 2,
+      "status": 1,
+      "links": [
+        {
+          "url": "http://buildingfirefoxos.com/building-blocks/lists.html",
+          "icon": "https://mozorg.cdn.mozilla.net/media/img/favicon.ico",
+          "name": "Building Firefox OS",
+          "description": "Lists",
+          "category": 1,
+          "status": 1
+        }, {
+          "url": "https://www.mozilla.org/en-US/styleguide/products/firefox-os/lists/",
+          "icon": "https://developer.cdn.mozilla.net/media/redesign/img/favicon32.png",
+          "name": "Firefox OS Guidelines",
+          "description": "Firefox OS Lists — Mozilla Style Guide — Mozilla",
+          "category": 1,
+          "status": 1
+        }, {
+          "url": "http://www.foxroid.jp/tips/lists",
+          "icon": "https://tasdgbl.backlog.jp/proxy/http://www.foxroid.jp/img/favicon.ico",
+          "name": "Foxroid",
+          "description": "Lists — Foxroid",
+          "category": 1,
+          "status": 1
+        }
+      ]
+    }, {
+      "name": "Grid Lists",
+      "url": "http://developer.android.com/design/building-blocks/grid-lists.html",
+      "icon": "http://developer.android.com/favicon.ico",
+      "category": 2,
+      "status": 1,
+      "links": [
+        {
+          "url": "http://www.foxroid.jp/tips/GridLists",
+          "icon": "https://tasdgbl.backlog.jp/proxy/http://www.foxroid.jp/img/favicon.ico",
+          "name": "Foxroid",
+          "description": "Grid Lists — Foxroid",
+          "category": 1,
+          "status": 1
+        }
+      ]
+    }, {
+      "name": "Scrolling",
+      "url": "http://developer.android.com/design/building-blocks/scrolling.html",
+      "icon": "http://developer.android.com/favicon.ico",
+      "category": 2,
+      "status": 1,
+      "links": [
+        {
+          "url": "http://buildingfirefoxos.com/building-blocks/scrolling.html",
+          "icon": "https://mozorg.cdn.mozilla.net/media/img/favicon.ico",
+          "name": "Building Firefox OS",
+          "description": "Scrolling",
+          "category": 1,
+          "status": 1
+        }, {
+          "url": "http://www.foxroid.jp/tips/tabs",
+          "icon": "https://tasdgbl.backlog.jp/proxy/http://www.foxroid.jp/img/favicon.ico",
+          "name": "Foxroid",
+          "description": "Scrolling — Foxroid",
+          "category": 1,
+          "status": 1
+        }
+      ]
+    }, {
+      "name": "Spinners",
+      "url": "http://developer.android.com/design/building-blocks/spinners.html",
+      "icon": "http://developer.android.com/favicon.ico",
+      "category": 2,
+      "status": 1,
+      "links": [
+        {
+          "url": "http://www.foxroid.jp/tips/GridLists",
+          "icon": "https://tasdgbl.backlog.jp/proxy/http://www.foxroid.jp/img/favicon.ico",
+          "name": "Foxroid",
+          "description": "Spinners — Foxroid",
+          "category": 1,
+          "status": 1
+        }
+      ]
+    }, {
+      "name": "Buttons",
+      "url": "http://developer.android.com/design/building-blocks/buttons.html",
+      "icon": "http://developer.android.com/favicon.ico",
+      "category": 2,
+      "status": 1,
+      "links": [
+        {
+          "url": "http://buildingfirefoxos.com/building-blocks/buttons.html",
+          "icon": "https://mozorg.cdn.mozilla.net/media/img/favicon.ico",
+          "name": "Building Firefox OS",
+          "description": "Buttons",
+          "category": 1,
+          "status": 1
+        }, {
+          "url": "http://www.mozilla.org/en-US/styleguide/products/firefox-os/buttons/",
+          "icon": "https://developer.cdn.mozilla.net/media/redesign/img/favicon32.png",
+          "name": "Firefox OS Guidelines",
+          "description": "Firefox OS App Buttons, Toolbar and Filters — Mozilla Style Guide — Mozilla",
+          "category": 1,
+          "status": 1
+        }, {
+          "url": "http://www.foxroid.jp/tips/buttons",
+          "icon": "https://tasdgbl.backlog.jp/proxy/http://www.foxroid.jp/img/favicon.ico",
+          "name": "Foxroid",
+          "description": "Buttons — Foxroid",
+          "category": 1,
+          "status": 1
+        }
+      ]
+    }, {
+      "name": "Switches",
+      "url": "http://developer.android.com/design/building-blocks/switches.html",
+      "icon": "http://developer.android.com/favicon.ico",
+      "category": 2,
+      "status": 1,
+      "links": [
+        {
+          "url": "http://buildingfirefoxos.com/building-blocks/switches.html",
+          "icon": "https://mozorg.cdn.mozilla.net/media/img/favicon.ico",
+          "name": "Building Firefox OS",
+          "description": "Switches",
+          "category": 1,
+          "status": 1
+        }, {
+          "url": "https://www.mozilla.org/en-US/styleguide/products/firefox-os/switches/",
+          "icon": "https://developer.cdn.mozilla.net/media/redesign/img/favicon32.png",
+          "name": "Firefox OS Guidelines",
+          "description": "Firefox OS Check Boxes, Switches and Sliders — Mozilla Style Guide — Mozilla",
+          "category": 1,
+          "status": 1
+        }, {
+          "url": "http://www.foxroid.jp/tips/switches",
+          "icon": "https://tasdgbl.backlog.jp/proxy/http://www.foxroid.jp/img/favicon.ico",
+          "name": "Foxroid",
+          "description": "Switches — Foxroid",
+          "category": 1,
+          "status": 1
+        }
+      ]
+    }, {
+      "name": "Dialogs",
+      "url": "http://developer.android.com/design/building-blocks/dialogs.html",
+      "icon": "http://developer.android.com/favicon.ico",
+      "category": 2,
+      "status": 1,
+      "links": [
+        {
+          "url": "http://buildingfirefoxos.com/building-blocks/switches.html",
+          "icon": "https://mozorg.cdn.mozilla.net/media/img/favicon.ico",
+          "name": "Building Firefox OS",
+          "description": "Switches",
+          "category": 1,
+          "status": 1
+        }, {
+          "url": "http://www.foxroid.jp/tips/dialogs",
+          "icon": "https://tasdgbl.backlog.jp/proxy/http://www.foxroid.jp/img/favicon.ico",
+          "name": "Foxroid",
+          "description": "Dialogs — Foxroid",
+          "category": 1,
+          "status": 1
+        }
+      ]
+    }
+  ]
+}
