@@ -69,7 +69,9 @@ exports.main = function() {
   linkPanel.port.on('prepareAppendPagePanel', function() {
     linkPanel.hide();
     
-  
+
+    let { emit } = require("sdk/event/core");
+    emit(toolbar, 'hide');
   });
   
   
@@ -77,7 +79,8 @@ exports.main = function() {
     id: 'widget',
     label: _('WIDGET_LABEL'),
     icon: {
-      '16': './resources/icon_disabled16.png'
+      '16': './resources/icon_disabled16.png',
+      '32': './resources/icon_disabled32.png'
     },
     onClick: function(state) {
       linkPanel.show({position: this});
@@ -85,9 +88,11 @@ exports.main = function() {
   });
   widget.iconEnabled = function(enabled) {
     this.icon = enabled ? {
-      "16": "./resources/icon16.png"
+      '16': './resources/icon16.png',
+      '32': './resources/icon32.png'
     }: {
-      "16": "./resources/icon_disabled16.png"
+      '16': './resources/icon_disabled16.png',
+      '32': './resources/icon_disabled32.png'
     }
   };
   
@@ -96,12 +101,20 @@ exports.main = function() {
     title : _('WIDGET_LABEL'),
     items : [new Frame({url : "./setting.html"})],
     hidden : false,
+    onAttach: function(e) {
+    	console.log('##########################', 'attach');
+    },
+    onDetach: function(e) {
+    	console.log('##########################', 'detach');
+    },
     onShow: function(e) {
       console.log('##########################', 'show');
     },
     onHide : function(e) {
       console.log('##########################', 'hide');
+      console.log('aaaa;;;;;', toolbar);
     }
   });
+  console.log('##########################', toolbar.id);
   
 }
