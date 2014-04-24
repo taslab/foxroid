@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory >
+		<CheckBoxPreference
+			android:key="key_checkbox"
+			android:title="@string/pref_name_checkbox"
+			android:summaryOn="@string/summary_checkbox_on"
+			android:summaryOff="@string/summary_checkbox_off" />
+		<EditTextPreference
+			android:key="key_edittext"
+			android:title="@string/pref_name_text"
+			android:summary="@string/summary_text"
+			android:dialogTitle="@string/dialogtitle_text" />
+		<ListPreference
+			android:key="key_list"
+			android:title="@string/pref_name_list"
+			android:summary="@string/summary_list"
+			android:dialogTitle="@string/dialogtitle_list"
+			android:entries="@array/list_pref_labels"
+			android:entryValues="@array/list_pref_values" />
+		</PreferenceCategory>
+</PreferenceScreen>
