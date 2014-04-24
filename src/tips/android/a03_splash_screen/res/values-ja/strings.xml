@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="splash_sample_text">スプラッシュテスト</string>
+    <string name="after_splash_text">スプラッシュ後の画面です。このまま閉じてください。</string>
+
+</resources>

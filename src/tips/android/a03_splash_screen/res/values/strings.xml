@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Tips03</string>
+    <string name="splash_sample_text">Splash Test</string>
+    <string name="after_splash_text">It is a screen after the splash. Please close it is.</string>
+
+</resources>
