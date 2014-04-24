@@ -1,0 +1,13 @@
+{
+    "name": "tips",
+    "default_locale": "ja-Ja",
+    "description": "tips",
+    "launch_path": "/index.html",
+    "icons": {
+        "128": "/img/icon-128.png"
+    },
+    "developer": {
+        "url": "http://tasdg.co.jp/",
+        "name": "tasdg"
+    }
+}

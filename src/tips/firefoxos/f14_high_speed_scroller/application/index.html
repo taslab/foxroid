@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>List</title>
+<link rel="stylesheet" href="./shared/style/headers.css">
+<link rel="stylesheet" href="./shared/style/lists.css">
+<link rel="stylesheet" href="./shared/style/scrolling.css">
+<link rel="stylesheet" href="./style/style.css">
+<script type="text/javascript" src="./js/thirdparty/scrolling.js"></script>
+<script type="text/javascript" src="./js/main.js"></script>
+</head>
+<body role="application">
+
+    <section class="view" role="region">
+        <header class="fixed"><h1>リストに高速スクローラーを付ける</h1></header>
+        <article class="content scrollable header">
+
+            <!-- index list -->
+            <nav data-type="scrollbar">
+              <p></p>
+              <ol>
+                <li data-img="magnifier_icon_big.png"><a href="#"><span class="pack-icon-search">Search</span></a></li>
+                <li data-img="star_icon_big.png"><a href="#"><span class="pack-icon-favorites">favorites</span></a></li>
+                <li data-letter="A" data-anchor="group-A"><a href="#">A</a></li>
+                <li data-letter="B" data-anchor="group-B"><a href="#">B</a></li>
+                <li data-letter="C" data-anchor="group-C"><a href="#">C</a></li>
+                <li data-letter="D" data-anchor="group-D"><a href="#">D</a></li>
+                <li data-letter="E" data-anchor="group-E"><a href="#">E</a></li>
+                <li data-letter="F" data-anchor="group-F"><a href="#">F</a></li>
+                <li data-letter="G" data-anchor="group-G"><a href="#">G</a></li>
+                <li data-letter="H" data-anchor="group-G"><a href="#">H</a></li>
+                <li data-letter="I" data-anchor="group-G"><a href="#">I</a></li>
+                <li data-letter="J" data-anchor="group-J"><a href="#">J</a></li>
+                <li data-letter="K" data-anchor="group-K"><a href="#">K</a></li>
+                <li data-letter="L" data-anchor="group-L"><a href="#">L</a></li>
+                <li data-letter="M" data-anchor="group-M"><a href="#">M</a></li>
+                <li data-letter="N" data-anchor="group-N"><a href="#">N</a></li>
+                <li data-letter="O" data-anchor="group-O"><a href="#">O</a></li>
+                <li data-letter="P" data-anchor="group-P"><a href="#">P</a></li>
+                <li data-letter="Q" data-anchor="group-Q"><a href="#">Q</a></li>
+                <li data-letter="R" data-anchor="group-R"><a href="#">R</a></li>
+                <li data-letter="S" data-anchor="group-S"><a href="#">S</a></li>
+                <li data-letter="T" data-anchor="group-T"><a href="#">T</a></li>
+                <li data-letter="Q" data-anchor="group-U"><a href="#">U</a></li>
+                <li data-letter="V" data-anchor="group-V"><a href="#">V</a></li>
+                <li data-letter="W" data-anchor="group-W"><a href="#">W</a></li>
+                <li data-letter="X" data-anchor="group-X"><a href="#">X</a></li>
+                <li data-letter="Y" data-anchor="group-Y"><a href="#">Y</a></li>
+                <li data-letter="Z" data-anchor="group-Z"><a href="#">Z</a></li>
+                <li data-letter="#" data-anchor="group-#"><a href="#">#</a></li>
+              </ol>
+            </nav>
+
+            <!-- add list -->
+            <div id="groups-container-box">
+                <div id="groups-container">
+
+                    <section id="groups-list" data-type="list">
+                        <!-- ***** A ***** -->
+                        <section id="section-group-A" class="group-section">
+                            <header id="group-A">A</header>
+                            <ol>
+                                <li class="contact-item" data-group="A"><a href="#"><p class="contact-text">Aladdin</p></a></li>
+                                <li class="contact-item" data-group="A"><a href="#"><p class="contact-text">Alan</p></a></li>
+                                <li class="contact-item" data-group="A"><a href="#"><p class="contact-text">Allan</p></a></li>
+                                <li class="contact-item" data-group="A"><a href="#"><p class="contact-text">Anastsius</p></a></li>
+                            </ol>
+                        </section>
+                        <!-- ***** B ***** -->
+                        <section id="section-group-B" class="group-section">
+                            <header id="group-B">B</header>
+                            <ol>
+                                <li class="contact-item" data-group="B"><a href="#"><p class="contact-text">Bille</p></a></li>
+                                <li class="contact-item" data-group="B"><a href="#"><p class="contact-text">Bryan</p></a></li>
+                                <li class="contact-item" data-group="B"><a href="#"><p class="contact-text">Byron</p></a></li>
+                            </ol>
+                        </section>
+                        <!-- ***** C ***** -->
+                        <section id="section-group-C" class="group-section">
+                            <header id="group-C">C</header>
+                            <ol>
+                                <li class="contact-item" data-group="C"><a href="#"><p class="contact-text">Carol</p></a></li>
+                                <li class="contact-item" data-group="C"><a href="#"><p class="contact-text">Cassie</p></a></li>
+                                <li class="contact-item" data-group="C"><a href="#"><p class="contact-text">Cecil</p></a></li>
+                                <li class="contact-item" data-group="C"><a href="#"><p class="contact-text">Christina</p></a></li>
+                                <li class="contact-item" data-group="C"><a href="#"><p class="contact-text">Claudia</p></a></li>
+                            </ol>
+                        </section>
+                        <!-- ***** D ***** -->
+                        <section id="section-group-D" class="group-section">
+                            <header id="group-D">D</header>
+                            <ol>
+                                <li class="contact-item" data-group="D"><a href="#"><p class="contact-text">Dandy</p></a></li>
+                                <li class="contact-item" data-group="D"><a href="#"><p class="contact-text">Davy</p></a></li>
+                                <li class="contact-item" data-group="D"><a href="#"><p class="contact-text">Demetria</p></a></li>
+                                <li class="contact-item" data-group="D"><a href="#"><p class="contact-text">Dodie</p></a></li>
+                                <li class="contact-item" data-group="D"><a href="#"><p class="contact-text">Dora</p></a></li>
+                            </ol>
+                        </section>
+                        <!-- ***** M ***** -->
+                        <section id="section-group-M" class="group-section">
+                            <header id="group-M">M</header>
+                            <ol>
+                                <li class="contact-item" data-group="M"><a href="#"><p class="contact-text">Mary</p></a></li>
+                                <li class="contact-item" data-group="M"><a href="#"><p class="contact-text">Mattew</p></a></li>
+                                <li class="contact-item" data-group="M"><a href="#"><p class="contact-text">Max</p></a></li>
+                                <li class="contact-item" data-group="M"><a href="#"><p class="contact-text">Mercy</p></a></li>
+                                <li class="contact-item" data-group="M"><a href="#"><p class="contact-text">Nicolas</p></a></li>
+                            </ol>
+                        </section>
+                        <!-- ***** Y ***** -->
+                        <section id="section-group-Y" class="group-section">
+                            <header id="group-Y">
+                                <abbr title="Contacts listed Y">Y</abbr>
+                            </header>
+                            <ol id="contacts-list-Y" data-group="Y">
+                                <li class="contact-item" data-group="Y"><a href="#"><p class="contact-text">Yolanda</p></a></li>
+                                <li class="contact-item" data-group="Y"><a href="#"><p class="contact-text">Yvonne</p></a></li>
+                            </ol>
+                        </section>
+                        <!-- ***** Z ***** -->
+                        <section id="section-group-Z" class="group-section">
+                            <header id="group-Z" class="">
+                                <abbr title="Contacts listed Z">Z</abbr>
+                            </header>
+                            <ol id="contacts-list-Z" data-group="Z">
+                                <li class="contact-item" data-group="Z"><a href="#"><p class="contact-text">Zack</p></a></li>
+                                <li class="contact-item" data-group="Z"><a href="#"><p class="contact-text">Zelda</p></a></li>
+                                <li class="contact-item" data-group="Z"><a href="#"><p class="contact-text">Zoe</p></a></li>
+                                <li class="contact-item" data-group="Z"><a href="#"><p class="contact-text">Zora</p></a></li>
+                            </ol>
+                        </section>
+                    </section><!-- /#groups-list -->
+
+                </div><!--/#groups-container-->
+            </div><!--/#groups-container-background-->
+
+
+        </article><!-- /.content.scrollable.header -->
+    </section><!-- /role="region" -->
+
+</body>
+</html>
