@@ -1,0 +1,9 @@
+{
+  "name": "Tips20",
+  "description": "Tips20 Youtube動画を再生する",
+  "launch_path": "/index.html",
+  "icons": {
+    "128": "/img/icon-128.png"
+  },
+  "default_locale": "ja"
+}
