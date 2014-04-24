@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tips16</string>
+    <string name="btn_play">Play</string>
+    <string name="music_title_prefix">Playing music:%s</string>
+    <string name="message_file_not_found">File not found.</string>
+</resources>

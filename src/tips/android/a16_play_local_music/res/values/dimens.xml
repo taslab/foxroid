@@ -1,0 +1,6 @@
+<resources>
+    <dimen name="button_width">160dp</dimen>
+    <dimen name="margin_bottom">30dp</dimen>
+    <dimen name="splash_text_size">30dp</dimen>
+    
+</resources>
