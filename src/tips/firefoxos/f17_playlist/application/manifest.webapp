@@ -1,0 +1,13 @@
+{
+  "name": "Tips17",
+  "description": "playlist",
+  "launch_path": "/index.html", 
+  "type": "privileged",
+  "icons": {
+    "128": "/img/icon-128.png"
+  },
+  "permissions": {
+    "device-storage:music":{ "access": "readonly" }
+  },
+  "default_locale": "ja"
+}
