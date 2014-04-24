@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tips46</string>
+    <string name="err_no_setting_title">設定エラー</string>
+    <string name="err_no_setting_message">GPSが設定されていません。設定画面に移動します</string>
+    <string name="err_sdcard_not_available">SDカードが利用できないため、保存できませんでした</string>
+    <string name="label_gps_disabled">GPS使用不可</string>
+    <string name="label_getting_location">位置情報取得中。画面を閉じないでください</string>
+    <string name="save_location_message">保存実行:%s</string>
+</resources>
