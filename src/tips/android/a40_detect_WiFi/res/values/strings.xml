@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WiFi state</string>
+    <string name="wifi_state_disabled">WiFi disabled</string>
+    <string name="wifi_state_disabling">WiFi disabling</string>
+    <string name="wifi_state_enabled">WiFi enabled</string>
+    <string name="wifi_state_enabling">WiFi enabling</string>
+    <string name="wifi_state_default">WiFi unavailable</string>
+
+</resources>

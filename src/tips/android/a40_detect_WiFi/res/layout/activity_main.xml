@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/txt_wifi_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text=""
+        android:textSize="@dimen/wifi_state_text_size" />
+
+    <ToggleButton
+        android:id="@+id/toggle_wifi_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/toggle_bottom_margin"
+        android:layout_marginLeft="@dimen/toggle_side_margin"
+        android:layout_marginRight="@dimen/toggle_side_margin" />
+
+</RelativeLayout>

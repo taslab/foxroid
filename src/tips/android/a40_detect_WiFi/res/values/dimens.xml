@@ -1,0 +1,8 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="toggle_side_margin">25dp</dimen>
+    <dimen name="toggle_bottom_margin">100dp</dimen>
+    <dimen name="wifi_state_text_size">30dp</dimen>
+
+</resources>
