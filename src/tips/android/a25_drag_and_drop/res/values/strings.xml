@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Tips25</string>
+    <string name="long_push_message">Touch list and continue!</string>
+    <string name="drop_message">Drop here!</string>
+    <string name="message_file_not_found">File not found.</string>
+
+</resources>
