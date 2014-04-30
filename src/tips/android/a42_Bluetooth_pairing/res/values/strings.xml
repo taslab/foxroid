@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Bluetooth pairing</string>
+    <string name="message_bluetooth_not_supported">Bluetooth is not supported</string>
+    <string name="message_set_bluetooth_if_canceled">Set Bluetooth if use this application</string>
+    <string name="message_set_ok_if_canceled">Set OK If your device want to be found.</string>
+    <string name="message_server">Sample message from Bluetooth server</string>
+    <string name="message_client">Sample message from Bluetooth client</string>
+    <string name="btn_name_be_discovered_device">Be discoverd for a while</string>
+    <string name="btn_name_discover_device">Discover devices</string>
+
+</resources>
