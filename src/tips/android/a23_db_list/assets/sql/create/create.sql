@@ -1,0 +1,5 @@
+CREATE TABLE "rank" (
+	"_id" INTEGER PRIMARY KEY AUTOINCREMENT,
+	"title" TEXT NOT NULL,
+	"artist" TEXT NOT NULL,
+	"text" TEXT NOT NULL);

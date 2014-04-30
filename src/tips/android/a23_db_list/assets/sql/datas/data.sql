@@ -1,0 +1,10 @@
+INSERT INTO rank (title, artist, text) VALUES("レット・イット・ゴー～ありのままで～(日本語歌)", "松たか子", "ディズニー映画「アナと雪の女王」日本版劇中歌");
+INSERT INTO rank (title, artist, text) VALUES("炎と森のカーニバル", "SEKAI NO OWARI", "「ひかりTV みらい系エンタメ」CMソング");
+INSERT INTO rank (title, artist, text) VALUES("レット・イット・ゴー～ありのままで～(エンドソング)", "May J.", "映画『アナと雪の女王』日本版主題歌");
+INSERT INTO rank (title, artist, text) VALUES("レット・イット・ゴー", "イディナ・メンゼル", "ディズニー映画「アナと雪の女王」劇中歌");
+INSERT INTO rank (title, artist, text) VALUES("ファミリーパーティー", "きゃりーぱみゅぱみゅ", "映画 「映画クレヨンしんちゃん ガチンコ!逆襲のロボとーちゃん」 主題歌");
+INSERT INTO rank (title, artist, text) VALUES("RPG", "SEKAI NO OWARI", "アニメ映画『映画クレヨンしんちゃん バカうまっ!B級グルメサバイバル!!』主題歌");
+INSERT INTO rank (title, artist, text) VALUES("ラブサーチライト", "柴咲コウ", "劇場版「名探偵コナン 異次元の狙撃手」主題歌");
+INSERT INTO rank (title, artist, text) VALUES("生まれてはじめて(日本語歌)", "神田沙也加, 松たか子", "");
+INSERT INTO rank (title, artist, text) VALUES("春風", "Rihwa", "フジテレビ系毎週水曜よる10時ドラマ「僕のいた時間」主題歌");
+INSERT INTO rank (title, artist, text) VALUES("HANDs", "AAA", "読売テレビ・ドラマ「トクボウ 警察庁特殊防犯課」主題歌");
