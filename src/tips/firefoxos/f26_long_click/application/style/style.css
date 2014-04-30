@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+html {
+  height: 100%;
+  font-size: 62.5%; /* Setting base font to 10px and define all your units in rem. 1rem = 10px */
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+[data-position="back"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0;
+    /* z-index: 100; -> drawer */
+}
+[data-position="back"].fade-in {
+    z-index: 120;
+    animation: fadeIn 0.2s forwards;
+    -webkit-animation: fadeIn 0.2s forwards;
+}
+[data-position="back"].fade-out {
+    animation: fadeOut 0.2s forwards;
+    -webkit-animation: fadeOut 0.2s forwards;
+}
