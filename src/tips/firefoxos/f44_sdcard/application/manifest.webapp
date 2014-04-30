@@ -1,0 +1,23 @@
+{
+  "name": "Firefox OS Tips",
+  "description": "Firefox OS Tips",
+  "launch_path": "/index.html",
+  "permissions": {
+    "storage": {
+      "description": "SDCard code"
+    }
+  },
+  "icons": {
+    "64": "/img/icon/app-icon64.png",
+    "128": "/img/icon/app-icon128.png"
+  },
+  "developer": {
+    "name": "TAS Design Group",
+    "url": "http://tasdg.co.jp/"
+  },
+  "default_locale": "ja",
+  "type": "privileged",
+  "permissions": {
+    "device-storage:sdcard":  { "access": "readwrite" }
+  }
+}
