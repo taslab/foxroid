@@ -1,0 +1,23 @@
+{
+  "name": "push_message",
+  "description": "49_push_message",
+  "launch_path": "/index.html", 
+  "type": "privileged",
+  "icons": {
+     "64": "/img/icon/app-icon64.png",
+    "128": "/img/icon/app-icon128.png"
+  },
+  "developer": {
+    "name": "TAS Design Group",
+    "url": "http://tasdg.co.jp/"
+  },
+  "default_locale": "ja",
+  "messages": {
+    "push": "/index.html"
+  },
+  "permissions": {
+    "systemXHR": {},
+    "push": {},
+    "desktop-notification" : {}
+  }
+}
