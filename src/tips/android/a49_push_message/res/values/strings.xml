@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Push Message</string>
+    <string name="reg_id_prefix">registration ID=</string>
+    <string name="message_not_supported">This device is not supported.</string>
+    <string name="message_user_cannot_deal_error">Fatal error.</string>
+    <string name="message_post_error">Post failed with error code </string>
+    <string name="button_label">send sample message</string>
+    <string name="notification_title">Push Message Sample</string>
+
+</resources>
