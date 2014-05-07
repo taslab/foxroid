@@ -5,34 +5,33 @@ let FAVICON_FIREFOX = 'http://www.mozilla.jp/static/images/firefox/favicon-32.ic
 let FAVICON_ANDROID = 'http://developer.android.com/favicon.ico';
 
 // entity
-function Item() {
-}
+
+function Item() {}
 Item.valueOf = data => ({
   url: data.url,
   title: data.description,
-  site: data.name,
-  icon : !StringUtils.isEmpty(data.icon) ? data.icon: FAVICON_GETTER.format(data.url),
-  category : {
-    icon: data.category == 1 ? FAVICON_FIREFOX: data.category == 2 ? FAVICON_ANDROID: null,
-    name: data.category == 1 ? 'Firefox': data.category == 2 ? 'Android': null
+  site: !StringUtils.isEmpty(data.name) ? data.name : data.url,
+  icon: !StringUtils.isEmpty(data.icon) ? data.icon : FAVICON_GETTER.format(data.url),
+  category: {
+    icon: data.tags[0] == 'FirefoxOS' ? FAVICON_FIREFOX : data.tags[0] == 'Android' ? FAVICON_ANDROID : null,
+    name: data.tags[0]
   }
 });
 
 // connect between view and viewmodel.
-let
-viewmodel = {
-  lblEmpty : ko.observable(),
-  lblAppendPage : ko.observable(),
+let viewmodel = {
+  lblEmpty: ko.observable(),
+  lblAppendPage: ko.observable(),
 
-  tips : ko.observableArray(),
+  tips: ko.observableArray(),
 
-  attachItemEvent : function(element, index, data) {
+  attachItemEvent: function(element, index, data) {
     $(element).filter('li').bind('click', function(event) {
       self.port.emit('onItemClicked', data.url);
     });
   },
 
-  swapData : function(newData) {
+  swapData: function(newData) {
     this.tips.removeAll();
     let array = [];
     for (let i in newData) {
@@ -44,6 +43,7 @@ viewmodel = {
 ko.applyBindings(viewmodel);
 
 self.port.on('show', function(pageInfo) {
+
   //FIXME require('sdk/l10n').getみたいのがcontentScript内ではできない？のでport経由でローカライズ
   self.port.once('onGetProperties', function(values) {
     viewmodel.lblEmpty(values.LABEL_EMPTY_MESSAGE);

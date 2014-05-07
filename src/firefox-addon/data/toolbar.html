@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+
+    <title>Foxroid - Create links</title>
+    <meta name="author" content="Toshiya Otaki" />
+
+    <link rel="stylesheet" href="stylesheet/commons.css" />
+    <link rel="stylesheet" href="stylesheet/toolbar.css" />
+
+    <style type="text/css" media="screen">
+    .layout_inputarea {
+        float: left;
+        width: -moz-calc(100% - 120px);
+    }
+    .layout_controlarea {
+        float: right;
+        width: 100px;
+        padding-top: 0.8em;
+    }
+    .layout_input {
+        width: -moz-calc(50% - 30px);
+    }
+    .layout_tagselector {
+        float: left;
+    }
+    .layout_url {
+        float: left;
+        width: -moz-calc(50% - 18px);
+    }
+    .layout_pagename {
+        float: left;
+        width: -moz-calc(50% - 18px);
+    }
+    .layout_inputurl {
+        width: -moz-calc(100% - 32px);
+        padding-left: 1.6em !important;
+    }
+    .layout_inputpagename {
+        width: -moz-calc(100% - .4em);
+    }
+    .layout_inserturl {
+        margin-top: .2em;
+        margin-left: -1.7em;
+    }
+    </style>
+
+    <script type="text/javascript" src="jslib/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="jslib/jquery.xdomainajax.js"></script>
+    <script type="text/javascript" src="jslib/tasjs-commons.min.0.0.1.js"></script>
+    <script type="text/javascript" src="js/toolbar.js"></script>
+
+</head>
+
+<body>
+    <section id="relate_url" style="padding: 0 1em;" class="clearfix">
+
+        <ul id="input_area" class="layout_inputarea">
+
+            <li class="clearfix layout_input" style="float: left; ">
+                <div class="layout_tagselector tag_selector">
+                    <button id="src_tags_selector"></button>
+                    <select id="src_tags"></select>
+                </div>
+                <div class="layout_url">
+                    <p>
+                        <label for="src_url">URL</label>
+                        <span id="src_url_validation" class="validation"></span>
+                    </p>
+                    <input type="text" id="src_url" class="layout_inputurl" placeholder="input or drag URL.">
+                    <button id="src_url_insert_currentpage" class="insert_url layout_inserturl">
+                        <p>insert a displayed website in the input area.</p>
+                    </button>
+                </div>
+                <div class="layout_pagename">
+                    <p>
+                        <label for="src_pagename">Page Title</label>
+                    </p>
+                    <input type="text" id="src_pagename" class="layout_inputpagename" />
+                </div>
+            </li>
+
+            <li style="
+              float: left; width: 60px;
+              text-align: center;
+              background-position: center 1em;
+              background-repeat: no-repeat;
+              background-image: url('./resources/ic_link.png');" />
+
+            <li class="clearfix layout_input" style="float: left; ">
+                <div class="layout_tagselector tag_selector">
+                    <button id="dest_tags_selector"></button>
+                    <select id="dest_tags"></select>
+                </div>
+                <div class="layout_url">
+                    <p>
+                        <label for="dest_url">URL</label>
+                        <span id="dest_url_validation" class="validation"></span>
+                    </p>
+                    <input type="text" id="dest_url" class="layout_inputurl" placeholder="input or drag URL." />
+                    <button id="dest_url_insert_currentpage" class="insert_url layout_inserturl">
+                        <p>insert a displayed website in the input area.</p>
+                    </button>
+                </div>
+                <div class="layout_pagename">
+                    <p>
+                        <label for="dest_pagename">Page Title</label>
+                    </p>
+                    <input type="text" id="dest_pagename" class="layout_inputpagename" />
+                </div>
+            </li>
+        </ul>
+
+        <div class="layout_controlarea">
+
+            <button id="btn_send" class="control">
+                <div id="btn_send:idle">
+                    <img src="./resources/icon16.png" style="vertical-align:middle; margin-top:-0.2em; margin-right:0.4em;" />Regist!
+                </div>
+                <div id="btn_send:process">
+                    <img src="./resources/ajax-loader.gif" style="vertical-align:middle; margin-top:-0.2em; margin-right:0.4em;">Process...
+                </div>
+                <span id="btn_send:success">
+                    <img src="./resources/ic_success.png" style="vertical-align:middle; margin-right:2px;" />Success!
+                </span>
+                <span id="btn_send:failed">
+                    <img src="./resources/ic_failed.png" style="vertical-align:middle; margin-right:2px;" />Failed
+                </span>
+            </button>
+        </div>
+
+    </section>
+</body>
+
+</html>
