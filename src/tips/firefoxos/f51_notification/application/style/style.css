@@ -1,0 +1,83 @@
+html {
+  height: 100%;
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+section[role="region"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+}
+
+.page.hidden {
+  transform: translateX(100%);
+}
+.page.activate {
+  transform: translateX(0);
+}
+
+.in, .out {
+  animation-timing-function: ease;
+  animation-duration: 0s;
+}
+.slide.out {
+  animation: slideouttoleft 0.4s forwards;
+}
+.slide.in {
+  animation: slideinfromright 0.4s forwards;
+}
+.slide.reverse.out {
+  animation: slideouttoright 0.4s forwards;
+}
+.slide.reverse.in {
+  animation: slideinfromleft 0.4s forwards;
+}
+
+/***forward***/
+@keyframes slideouttoleft {
+  0% {transform: translateX(0);}
+  100% {transform: translateX(-100%);}
+}
+
+@keyframes slideinfromright {
+  0% {transform: translateX(100%);}
+  100% {transform: translateX(0);}
+}
+
+/***Reverse***/
+@keyframes slideouttoright {
+  0% {transform: translateX(0);}
+  100% {transform: translateX(100%);}
+}
+@keyframes slideinfromleft {
+  0% {transform: translateX(-100%);}
+  100% {transform: translateX(0);}
+}
+
+/* Fonts */
+h1 { /* Main header */
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+
+h2 { /* Subheader, Dialog title */
+  font-size: 1.6rem;
+  font-weight: normal;
+}
+
+p {
+  font-size: 1.9rem;
+  font-weight: normal;
+  line-height: 2.5rem;
+}
