@@ -7,7 +7,7 @@ const dao = require('dao');
 
 
 const API_BASE_URI = 'http://127.0.0.1:9000/';
-const API_PAGES_TEMPLATE = API_BASE_URI + 'pages?updated={0}&ignorePendingLink=false';
+const API_PAGES_TEMPLATE = API_BASE_URI + 'pages?updated={0}&ignorePendingLink=true';
 const API_LINK_URI = API_BASE_URI + 'link';
 
 if (!String.prototype.format) {
@@ -29,8 +29,7 @@ if (!String.prototype.format) {
 
 function sync(onsuccess, onfailed) {
     try {
-        let now = new Date().toUTCString();
-        let latest = !! prefs.LATEST_SYNCHRONIZED ? new Date(prefs.LATEST_SYNCHRONIZED).getTime() : 0;
+        let latest = !! prefs.LATEST_SYNCHRONIZED ? prefs.LATEST_SYNCHRONIZED: 0;
         let api = API_PAGES_TEMPLATE.format(latest);
 
         Request({
@@ -48,7 +47,7 @@ function sync(onsuccess, onfailed) {
                             }
                         }
                     }
-                    prefs.LATEST_SYNCHRONIZED = now;
+                    prefs.LATEST_SYNCHRONIZED = '' + json.created;
                     if ( !! onsuccess) {
                         onsuccess.apply(this);
                     }

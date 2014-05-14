@@ -105,13 +105,9 @@ exports.main = function() {
         tabs.open(url);
         linkPanel.hide();
     });
-    linkPanel.port.on('prepareAppendPagePanel', function() {
+    linkPanel.port.on('sync', function() {
         linkPanel.hide();
-
-        let {
-            emit
-        } = require("sdk/event/core");
-        emit(toolbar, 'hide');
+        sync();
     });
 
     // Setting of the toolbar for create relation bettween page and page.
@@ -133,7 +129,7 @@ exports.main = function() {
     let toolbar = Toolbar({
         title: _('WIDGET_LABEL'),
         items: [toolbarFrame],
-        hidden: false
+        hidden: true
     });
 
 }

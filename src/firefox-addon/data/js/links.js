@@ -8,59 +8,58 @@ let FAVICON_ANDROID = 'http://developer.android.com/favicon.ico';
 
 function Item() {}
 Item.valueOf = data => ({
-  url: data.url,
-  title: data.description,
-  site: !StringUtils.isEmpty(data.name) ? data.name : data.url,
-  icon: !StringUtils.isEmpty(data.icon) ? data.icon : FAVICON_GETTER.format(data.url),
-  category: {
-    icon: data.tags[0] == 'FirefoxOS' ? FAVICON_FIREFOX : data.tags[0] == 'Android' ? FAVICON_ANDROID : null,
-    name: data.tags[0]
-  }
+    url: data.url,
+    title: data.description,
+    site: !StringUtils.isEmpty(data.name) ? data.name : data.url,
+    icon: !StringUtils.isEmpty(data.icon) ? data.icon : FAVICON_GETTER.format(data.url),
+    category: {
+        icon: data.tags[0] == 'FirefoxOS' ? FAVICON_FIREFOX : data.tags[0] == 'Android' ? FAVICON_ANDROID : null,
+        name: data.tags[0]
+    }
 });
 
 // connect between view and viewmodel.
 let viewmodel = {
-  lblEmpty: ko.observable(),
-  lblAppendPage: ko.observable(),
+    lblEmpty: ko.observable(),
+    lblAppendPage: ko.observable(),
 
-  tips: ko.observableArray(),
+    tips: ko.observableArray(),
 
-  attachItemEvent: function(element, index, data) {
-    $(element).filter('li').bind('click', function(event) {
-      self.port.emit('onItemClicked', data.url);
-    });
-  },
+    attachItemEvent: function(element, index, data) {
+        $(element).filter('li').bind('click', function(event) {
+            self.port.emit('onItemClicked', data.url);
+        });
+    },
 
-  swapData: function(newData) {
-    this.tips.removeAll();
-    let array = [];
-    for (let i in newData) {
-      array.push(Item.valueOf(newData[i]));
+    swapData: function(newData) {
+        this.tips.removeAll();
+        let array = [];
+        for (let i in newData) {
+            array.push(Item.valueOf(newData[i]));
+        }
+        ko.utils.arrayPushAll(this.tips, array);
     }
-    ko.utils.arrayPushAll(this.tips, array);
-  }
 };
 ko.applyBindings(viewmodel);
 
 self.port.on('show', function(pageInfo) {
 
-  //FIXME require('sdk/l10n').getみたいのがcontentScript内ではできない？のでport経由でローカライズ
-  self.port.once('onGetProperties', function(values) {
-    viewmodel.lblEmpty(values.LABEL_EMPTY_MESSAGE);
-    viewmodel.lblAppendPage(values.LABEL_APPEND_EXTARNAL_WEBSITE);
-  });
-  self.port.emit('getProperties', ['LABEL_EMPTY_MESSAGE', 'LABEL_APPEND_EXTARNAL_WEBSITE']);
+    //FIXME require('sdk/l10n').getみたいのがcontentScript内ではできない？のでport経由でローカライズ
+    self.port.once('onGetProperties', function(values) {
+        viewmodel.lblEmpty(values.LABEL_EMPTY_MESSAGE);
+        viewmodel.lblAppendPage(values.LABEL_APPEND_EXTARNAL_WEBSITE);
+    });
+    self.port.emit('getProperties', ['LABEL_EMPTY_MESSAGE', 'LABEL_APPEND_EXTARNAL_WEBSITE']);
 
-  if (pageInfo != null) {
-    viewmodel.swapData(pageInfo.links);
-  }
+    if (pageInfo != null) {
+        viewmodel.swapData(pageInfo.links);
+    }
 });
 
 self.port.on('hide', function() {
-  viewmodel.swapData(null);
+    viewmodel.swapData(null);
 });
 
-
-$('#appendPage').bind('click', function(event) {
-  self.port.emit('prepareAppendPagePanel');
+window.addEventListener('load', function(event) {
+    document.getElementById('action_sync').addEventListener('click', event => self.port.emit('sync'));
 });

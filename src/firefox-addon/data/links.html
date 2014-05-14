@@ -1,118 +1,133 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <html>
-  <head>
-    <meta content="charset=UTF-8"/>
+
+<head>
+    <meta content="charset=UTF-8" />
     <style type="text/css">
-      * {
+    * {
         padding: 0;
         margin: 0;
         font-size: 14px;
-      }
-
-      body {
-        padding: 6px;
+    }
+    body {
         line-height: 1.1em;
         font-size: 1em;
         background-color: #fff;
-      }
-
-      section h1 {
+    }
+    section h1 {
         /* List Header */
         font-size: 1em;
         display: none;
-      }
-
-      section li {
+    }
+    section li {
         display: list-item;
         list-style: none;
         padding: 6 6 4 6;
         margin-top: 1px;
         color: #003697;
         cursor: pointer;
-        background-color: #ddeffe;
-      }
-
-      section li:hover {
+        background-color: #dedad4;
+    }
+    section li:hover {
         background-color: #cde8ff;
-      }
-
-      section li:active {
-        background-color: #8cb7e2;
-      }
-
-      .icon {
+    }
+    section li:active {
+        background-color: #d0c9be;
+    }
+    .icon {
         width: 1.2em;
         height: 1.2em;
         vertical-align: middle;
-      }
-
-      .categoryicon {
+    }
+    .categoryicon {
         width: 1.2em;
         height: 1.2em;
         vertical-align: middle;
-      }
-
-      .title {
+    }
+    .title {
         vertical-align: middle;
-      }
-
-      .site {
+    }
+    .site {
         vertical-align: middle;
         color: #555;
         font-weight: bold;
         font-size: 0.6em;
-      }
-
-      button {
-        width: 100%;
-        border-top: 1px solid #ccc;
-        border-right: 1px solid #999;
-        border-bottom: 1px solid #999;
-        border-left: 1px solid #ccc;
-        padding: 5px 20px;
-        cursor: pointer;
-        color: #666;
-        background-color: #f0f0f0;
-      }
-
-      button:hover {
-        background-color: #e0e0e0;
-      }
-
-      button:active {
-        background-color: #d0d0d0;
-      }
-
-      button img {
-        width: 1.2em;
-        height: 1.2em;
-        vertical-align: middle;
-        margin-top: -0.3em;
-        margin-right: 0.25em;
-      }
+    }
+    section[role="region"] > header:first-child {
+        position: relative;
+        display: block;
+        z-index: 10;
+        padding: 0;
+        height: 32px;
+        border: none;
+        background-color: #ff4e00;
+    }
+    section[role="region"] > header:first-child menu {
+        height: 100%;
+        float: right;
+        padding: 0;
+        margin: 0;
+    }
+    section[role="region"] > header:first-child button {
+        display: block;
+        width: 32px;
+        height: 32px;
+        background-color: transparent;
+        background-position: center;
+        background-repeat: no-repeat;
+        border: none;
+        font-size: 0;
+        float: left;
+    }
+    section[role="region"] > header:first-child button:hover {
+        background-color: rgba(0, 0, 0, .2);
+    }
+    section[role="region"] > header:first-child button:active {
+        background-color: rgba(0, 0, 0, .5);
+    }
+    section[role="region"] > header:first-child button > * {
+        display: none;
+    }
+    section[role="region"] > header:first-child button.icon-add {
+        background-image: url(resources/ic_add.png);
+    }
+    section[role="region"] > header:first-child button.icon-sync {
+        background-image: url(resources/ic_sync.png);
+    }
     </style>
-  </head>
+</head>
 
-  <body>
+<body>
+    <section role="region">
+        <header>
+            <h1>Foxroid</h1>
+            <menu type="toolbar">
+                <button id="action_sync" class="icon icon-sync">
+                    <span>sync</span>
+                </button>
+            </menu>
+        </header>
+    </section>
     <section>
-      <h1>Tips</h1>
-      <ul data-bind="foreach: {data: tips, afterAdd: attachItemEvent}">
-        <li data-bind="attr: {href: url}">
-          <div>
-            <img class="icon" data-bind="attr: {src: icon, alt: site}"/>
-            <span class="title" data-bind="text: title">{{description}}</span>
-          </div>
-          <span class="site" data-bind="text: site">{{name}}</span>
-          <img style="float: right;" class="categoryicon" data-bind="attr: {src: category.icon, alt: category.name}"/>
-        </li>
-      </ul>
+        <h1>Tips</h1>
+        <ul data-bind="foreach: {data: tips, afterAdd: attachItemEvent}">
+            <li data-bind="attr: {href: url}">
+                <div>
+                    <img class="icon" data-bind="attr: {src: icon, alt: site}" />
+                    <span class="title" data-bind="text: title">{{description}}</span>
+                </div>
+                <span class="site" data-bind="text: site">{{name}}</span>
+                <img style="float: right;" class="categoryicon" data-bind="attr: {src: category.icon, alt: category.name}" />
+            </li>
+        </ul>
     </section>
     <menu style="margin-top: 1em;">
-      <li>
-        <p style="margin-bottom: 0.5em;" data-bind="text: lblEmpty, style:{display: tips().length > 0 ? 'none': 'block'}" >
-          {{このページにはまだ関連するページが登録されていません。}}
-        </p>
-      </li>
+        <li>
+            <p style="padding: 1em;" data-bind="text: lblEmpty, style:{display: tips().length > 0 ? 'none': 'block'}">
+                {{このページにはまだ関連するページが登録されていません。}}
+            </p>
+        </li>
     </menu>
-  </body>
+</body>
+
 </html>
