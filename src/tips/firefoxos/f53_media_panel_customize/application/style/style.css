@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+html {
+  height: 100%;
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+body[role="application"] > [role="region"] {
+  height: 100%;
+  position: relative;
+}
+
+.seekbarArea{
+  padding: 0 1.5rem;
+}
+
+.controlArea{
+  padding: 1.5rem 1.5rem;
+  background: #333;
+}
+
+.controlArea div{
+  width: calc(100% / 3);
+  display: inline-block;
+  letter-spacing: -1em;
+  word-spacing: -1em;
+  font-size: 0px;
+  text-align: center;
+}
+
+.controlArea div button.media-icon:before{
+  top: 50%;
+  left: 50%;
+  margin-left: -28%;
+  margin-top: -28%;
+}
+
+.controlArea div button.media-icon.media-none{
+  opacity: 0.5;
+}
+
+.controlArea div button.media-icon.media-none:active{
+  background: url("../shared/style/buttons/images/ui/default.png") repeat-x scroll left bottom / auto 100% #FAFAFA;
+  border: 0.1rem solid #A6A6A6;
+}
+
+.controlArea div button{
+  width: 5rem;
+  margin-bottom: 0;
+  height: 5rem;
+  padding: 0;
+  border-radius: 5rem;
+}

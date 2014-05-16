@@ -1,0 +1,26 @@
+{
+  "name": "media_panel_customize",
+  "description": "f53_media_panel_customize",
+  "launch_path": "/index.html",
+  "type": "privileged",
+  "icons": {
+    "64": "/img/icon/app-icon64.png",
+    "128": "/img/icon/app-icon128.png"
+  },
+  "permissions": {
+    "audio-channel-content": {}, 
+    "deprecated-hwvideo": {}, 
+    "settings": {
+      "access": "readonly"
+    }, 
+    "storage": {}, 
+    "device-storage:music": {
+      "access": "readwrite"
+    }
+  }, 
+  "developer": {
+    "name": "TAS Design Group",
+    "url": "http://tasdg.co.jp/"
+  },
+  "default_locale": "ja"
+}

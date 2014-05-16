@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+  <meta charset="utf-8">
+  <title>media_panel_customize</title>
+  <link rel="stylesheet" href="shared/style/headers.css">
+  <link rel="stylesheet" href="shared/style/buttons.css">
+  <link rel="stylesheet" href="shared/style/seekbars.css">
+  <link rel="stylesheet" href="shared/style/icons/media_icons.css">
+  <link rel="stylesheet" href="style/style.css">
+  <script src="shared/js/device_storage/enumerate_all.js"></script>
+  <script src="shared/js/lazy_loader.js"></script>
+  <script src="shared/js/async_storage.js"></script>
+  <script src="shared/js/mediadb.js"></script>
+  <script src="js/thirdparty/seekbars.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+  <section role="region">
+    <header>
+      <h1>media_panel_customize</h1>
+    </header>
+    <article>
+
+      <audio class="audioArea" id="audioBlock"></audio>
+
+      <section>
+        <div id="seekbar" class="seekbarArea" role="slider">
+          <label id="startTime">00:00</label>
+          <label id="endTime">00:00</label>
+          <div>
+            <progress value="0" max="100"></progress>
+            <button id="handle">handler</button>
+          </div>
+        </div><!--/.seekbarArea-->
+        <section class="controlArea">
+          <div><button class="media-icon media-skipbackwards" id="rew"></button></div><div><button class="media-icon media-play media-none" id="play"></button></div><div><button class="media-icon media-skipforward" id="ff"></button></div>
+        </section><!--/.controlArea-->
+      </section>
+
+    </article>
+  </section>
+</body>
+</html>
