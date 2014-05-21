@@ -1,0 +1,6 @@
+<resources>
+
+    <dimen name="margin_controller_top">35dp</dimen>
+    <dimen name="margin_dummy_top">12dp</dimen>
+
+</resources>
