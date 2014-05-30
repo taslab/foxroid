@@ -9,7 +9,6 @@ addEventListener('message', function(e) {
   } else if (intervalid !== 0) {
     clearInterval(intervalid);
   }
-  console.log(e.data.name);
   intervalid = setInterval(function() {
     getserver(e.data.name);
   }, INTERVAL);
