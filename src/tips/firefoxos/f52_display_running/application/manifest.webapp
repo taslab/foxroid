@@ -1,0 +1,19 @@
+{
+  "name": "diplay_running",
+  "description": "52_diplay_running",
+  "launch_path": "/index.html",
+  "type": "certified",
+  "icons": {
+    "64": "/img/icon/app-icon64.png",
+    "128": "/img/icon/app-icon128.png"
+  },
+  "developer": {
+    "name": "TAS Design Group",
+    "url": "http://tasdg.co.jp/"
+  },
+  "default_locale": "ja",
+  "permissions": {
+    "device-storage:music":{ "access": "readwrite" },
+    "audio-channel-content":{}
+  }
+}
