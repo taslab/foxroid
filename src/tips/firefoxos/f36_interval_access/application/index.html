@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+  <meta charset="utf-8">
+  <title>Interval Access</title>
+  <link rel="stylesheet" href="style/style.css">
+  <script src="js/main.js"></script>
+  <script src="js/worker.js"></script>
+</head>
+<body>
+  <section>
+    <header>
+      <h1>Interval Access</h1>
+    </header>
+    <article>Access to following server every 5sec on background thread.</article>
+    <input id='name' value='http://ntp-a1.nict.go.jp/cgi-bin/time'>
+    <p>
+    <button id='btn'>start</button>
+    <button id='stop'>stop</button>
+    <p>
+    <div id='msg'></div>
+  </section>
+</body>
+</html>
