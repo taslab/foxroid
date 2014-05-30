@@ -1,0 +1,40 @@
+@charset "UTF-8";
+html {
+  height: 100%;
+  font-size: 62.5%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.gridsDisplay {
+  letter-spacing: -0.4em;
+  overflow: hidden;
+}
+
+.gridsDisplay .grid {
+  margin: 0;
+  float: left;
+  display: table;
+  width: calc((100% / 3));
+  height: 7rem;
+  text-align: center;
+  background: #333333;
+  color: #ffffff;
+  letter-spacing: normal;
+  font-size: 2.4rem;
+}
+
+.gridsDisplay .grid:nth-child(2n) {
+  background: #ffffff;
+  color: #333333;
+}
+
+.gridsDisplay .grid > div {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
