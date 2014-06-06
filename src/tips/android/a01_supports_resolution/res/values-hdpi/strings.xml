@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="text_sample_label">Text Sample hdpi</string>
+    <string name="button_sample_label">Button Sample hdpi</string>
+
+</resources>
