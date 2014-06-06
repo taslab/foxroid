@@ -1,0 +1,6 @@
+<resources>
+
+    <dimen name="vertical_spacing">30dp</dimen>
+    <dimen name="horizontal_spacing">10dp</dimen>
+
+</resources>
