@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Input of Date and Time</string>
+    <string name="button_input_date">Input Date</string>
+    <string name="button_input_time">Input Time</string>
+
+</resources>
