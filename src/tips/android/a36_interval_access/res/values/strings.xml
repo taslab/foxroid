@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Interval Access</string>
+    <string name="button_start">Interval Start</string>
+    <string name="button_stop">Interval Stop</string>
+    <string name="text_initial_value">Push start button!</string>
+
+</resources>
