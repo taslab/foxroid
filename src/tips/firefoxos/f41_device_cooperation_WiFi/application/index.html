@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+  <meta charset="utf-8">
+  <title>Connection with another device on TCPSocket.</title>
+  <link rel="stylesheet" href="style/style.css" type="text/css">
+  <script src="js/main.js" type="text/javascript"></script>
+</head>
+<body>
+  <section>
+    <header>
+      <h1>Connection with another device on TCPSocket.</h1>
+    </header>
+    <p class='exp'>This application use two firefoxos devices. One device is sensor server. it gets ambient light value. the other device is display client. It get sensor value from sensor server every 5 second, and if recieved value is less than 10 background color set green. more than 10 background color set red.</p>
+    <input id='input_s' type="radio" name="type" value="sencer" checked>Sencer(Server)</input><br>
+    <p>
+    <input id='input_d' type="radio" name="type" value="display">Display(client)</input><br>
+    ServerIPAddress:<INPUT id='ipadr' type="text" value='192.168.1.105'><br>
+    <p>
+    <button id='btn'>START</button>
+    <p>
+    <div id='adr'></div>
+    <div id='status'></div>
+    <div id='sensor'></div>
+    <div id='recieve'></div>
+  </section>
+</body>
+</html>
