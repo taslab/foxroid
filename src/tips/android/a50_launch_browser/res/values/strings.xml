@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Launch Browser</string>
+    <string name="button_launch_browser">Launch</string>
+    <string name="button_ok">OK</string>
+    <string name="message_error_title">Input Error</string>
+    <string name="message_launch_failed">Launch failed.</string>
+    <string name="edit_initial_value">http://</string>
+
+</resources>
