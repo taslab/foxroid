@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+  <meta charset="utf-8">
+  <title>input_of_date_and_time</title>
+  <link rel="stylesheet" href="style/thirdparty/brick-1.0.1.min.css">
+  <link rel="stylesheet" href="shared/style/headers.css">
+  <link rel="stylesheet" href="shared/style/input_areas.css">
+  <link rel="stylesheet" href="shared/style/lists.css">
+  <link rel="stylesheet" href="style/style.css">
+  <script src="js/thirdparty/brick-1.0.1.min.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+
+  <section role="region">
+    <header>
+      <h1>date_and_time_input_components</h1>
+    </header>
+    <article>
+
+      <div class="calendarArea">
+        <x-calendar id="cal1" controls></x-calendar>
+        <div class="inputArea">
+          <input id="singledate" type="text" readonly="readonly">
+        </div>
+      </div>
+
+      <div class="inputArea">
+        <p>日付選択</p>
+        <input type="date">
+        <p>時間選択</p>
+        <input type="time">
+      </div>
+
+    </article>
+  </section>
+
+</body>
+</html>
