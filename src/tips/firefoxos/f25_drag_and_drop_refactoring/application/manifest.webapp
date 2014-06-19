@@ -1,0 +1,15 @@
+{
+  "name": "drag_and_drop",
+  "description": "f25_drag_and_drop",
+  "launch_path": "/index.html",
+  "type": "web",
+  "icons": {
+    "64": "/img/icon/app-icon64.png",
+    "128": "/img/icon/app-icon128.png"
+  },
+  "developer": {
+    "url": "http://tasdg.co.jp/",
+    "name": "tasdg"
+  },
+  "default_locale": "ja-Ja"
+}

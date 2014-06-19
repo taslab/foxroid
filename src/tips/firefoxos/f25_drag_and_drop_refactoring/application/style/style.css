@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+html {
+  height: 100%;
+  font-family: sans-serif;
+  font-size: 62.5%;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 720px) and (max-aspect-ratio: 1 / 1), only screen and (min-width: 800px) and (max-width: 1280px) and (min-aspect-ratio: 1 / 1) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media only screen and (min-width: 640px) and (max-width: 1080px) and (max-aspect-ratio: 1 / 1), only screen and (min-width: 960px) and (max-width: 1920px) and (min-aspect-ratio: 1 / 1) {
+  html {
+    font-size: 125%;
+  }
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+}
+
+body #wrap {
+  height: 100%;
+}
+
+body #wrap > section {
+  height: 100%;
+}
+
+#list-group li {
+  cursor: move;
+  background-color: #fff;
+  position: relative;
+  z-index: 800;
+  font-size: 1.8rem;
+}
+
+#dropArea {
+  width: 30%;
+  height: 100px;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  margin-left: -15%;
+  background-color: #000;
+  border: 1px solid #ccc;
+  z-index: 800;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+  opacity: 0.3;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  -ms-border-radius: 1em;
+  -o-border-radius: 1em;
+  border-radius: 1em;
+}
