@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Device Cooperation WiFi</string>
+    <string name="button_ok">OK</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_discover_peer">Discover Peers</string>
+    <string name="button_disconnect">Disconnect</string>
+    <string name="my_device_name_label">My Device Name:</string>
+    <string name="no_data_label">No devices found.Push Discover Peers button.</string>
+    <string name="discovered_device_name_label">Discovered Device Name:</string>
+    <string name="title_discovery_setting_error">Setting Error</string>
+    <string name="title_connect_confirm">Conncet confirm</string>
+    <string name="message_discovery_initiated">Discovery Initiated.</string>
+    <string name="message_discovery_failed">Discovery Failed. ReasonCode:</string>
+    <string name="message_disconnect_failed">Disconnect Failed. ReasonCode:</string>
+    <string name="message_discovery_setting_error">Enable P2P from system settings</string>
+    <string name="message_connect_confirm">Do you connect to this device?</string>
+    <string name="message_discovering">Discovering Peers</string>
+    <string name="message_connect_failed">Connect failed. Retry.</string>
+    <string name="message_send_message">Send message from %s</string>
+    <string name="message_connecting_to">Connecting to :%s</string>
+    <string name="message_aquistion_of_message_failed">Acquisition of message failed</string>
+
+</resources>
