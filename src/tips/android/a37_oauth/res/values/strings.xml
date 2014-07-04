@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Use OAuth</string>
+    <string name="btn_start_oauth">start oauth</string>
+    <string name="callback_scheme">callbackoauth</string>
+
+</resources>
