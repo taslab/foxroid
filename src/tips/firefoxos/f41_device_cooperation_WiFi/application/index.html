@@ -13,17 +13,22 @@
       <h1>Connection with another device on TCPSocket.</h1>
     </header>
     <p class='exp'>This application use two firefoxos devices. One device is sensor server. it gets ambient light value. the other device is display client. It get sensor value from sensor server every 5 second, and if recieved value is less than 10 background color set green. more than 10 background color set red.</p>
-    <input id='input_s' type="radio" name="type" value="sencer" checked>Sencer(Server)</input><br>
     <p>
-    <input id='input_d' type="radio" name="type" value="display">Display(client)</input><br>
-    ServerIPAddress:<INPUT id='ipadr' type="text" value='192.168.1.105'><br>
+      <label><input id="input_s" type="radio" name="type" value="sencer" checked>Sencer(Server)</label>
+    </p>
     <p>
-    <button id='btn'>START</button>
+      <label><input id="input_d" type="radio" name="type" value="display">Display(client)</label>
+    </p>
     <p>
-    <div id='adr'></div>
-    <div id='status'></div>
-    <div id='sensor'></div>
-    <div id='recieve'></div>
+      ServerIPAddress:&nbsp;<input id="ipadr" type="text" value="192.168.1.105">
+    </p>
+    <p>
+      <button id='btn'>START</button>
+    </p>
+    <div id="adr"></div>
+    <div id="status"></div>
+    <div id="sensor"></div>
+    <div id="recieve"></div>
   </section>
 </body>
 </html>
