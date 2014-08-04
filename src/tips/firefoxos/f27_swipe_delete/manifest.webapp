@@ -1,0 +1,20 @@
+{
+  "name": "swipe_delete",
+  "description": "27_swipe_delete",
+  "launch_path": "/index.html",
+  "type": "web",
+  "icons": {
+    "64": "/img/icon/app-icon64.png",
+    "128": "/img/icon/app-icon128.png"
+  },
+  "developer": {
+    "name": "TAS Design Group",
+    "url": "http://tasdg.co.jp/"
+  },
+  "locales": {
+   "en": {
+     "description": "Foxroid Tips #27. Slide to remove elements."
+   }
+  },
+  "default_locale": "en"
+}
