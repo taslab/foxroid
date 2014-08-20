@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Start Market</string>
+    <string name="explain_message">Press the button below. It launches Firefox if it is installed. It moves to Play Store if Firefox not installed. </string>
+    <string name="button_launch_or_market">Launch/Market</string>
+
+</resources>
